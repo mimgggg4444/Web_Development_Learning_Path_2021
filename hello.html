@@ -1,17 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- 검색 엔진 용 키워드 정리 -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <!-- 웹 페이지에 대한 설명을 정의 -->
+    <meta name="description" content="Web tutorials">
+
+    <!-- 페이지 작성자 정의 -->
+    <meta name="author" content="minki">
+
+    <!-- 30초 마다 문서 새로고침 -->
+    <meta http-equiv="refresh" content="3000">
+
+    <!-- 웹 사이트가 모든 기기에서 보기 좋게 보이도록 뷰포트 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
 </head>
 <body>
     
 
+    
+
+    <h1>My First JavaScript</h1>
+    <p>JavaScript cann change the content of ana HTML element : </p>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="demo">This is a demonstration.</p>
+
+
+    <h1>My First JavaScript</h1>    
+    <p id="demo2">JavaScript can change the style of an HTML element.</p>
+
     <script>
-        alert("hello, world");
+        function myFunction2(){
+            document.getElementById("demo2").style.fontSize = "25px";
+
+            document.getElementById("demo2").style.color = "red";
+
+            document.getElementById("demo2").style.backgroundColor = "yellow";
+        }
     </script>
-    <script type="text/javaScript" src="hello.js"></script>
+    <button type="button" onclick="myFunction2()">Click me!</button>
+
+
+    <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+    </script>
+
+    <h1>My First JavaScript</h1>
+    <p>Here, a JavaScript changes  the value of the src (source) attribute of an image.</p>
+
+    <script>
+        function light(sw){
+            var pic;
+            if(sw == 0){
+                pic = "off.jpg"
+            }else{
+                pic = "on.jpg"
+            }
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+
+    <img id="myImage" src="on.jpg" alt="" width="100px" height="150px">
+    
+
+
+
+
+    <p>
+        <button type="button" onclick="light(1)">Light on</button>
+
+        <button type="button" onclick="light(0)">Light off</button>
+    </p>
+
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px">
+
+    <ul>
+        <li>봄</li>
+        <li>여름</li>
+        <li>가을</li>
+        <li>겨울</li>
+    </ul>
+
+    <dl>
+        <dt>사계절</dt>
+        <dd>내용</dd>
+        <dd></dd>
+    </dl>
 </body>
 </html>

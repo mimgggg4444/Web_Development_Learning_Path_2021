@@ -31,12 +31,25 @@
         }
 
         
+#myHeader{
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;}
+    
+button:hover{
+    color: orange ; text-decoration: none;
+}
+
     </style>
 
     <link rel="stylesheet" href="./">
 
 </head>
 <body>
+
+    <p><a href="#javaScriptChapter">가자 자바스크립트로</a></p>
+    <h1 id="myHeader">myHeader</h1>
 
 
     <div class="city">
@@ -115,6 +128,8 @@
 
 
     <!-- 자바 스크립트 -->
+    <h1 id="javaScriptChapter">javaScript Chapter</h1>
+
     <h2>Use of The class Attribute in JavaScript</h2>
 <p>Click the button to hide all elements with class name "city":</p>
 
@@ -135,6 +150,19 @@
         for(var i = 0; i < x.length; i++){
             x[i].style.display = "none";}}
 </script>
+
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+    function displayResult(){
+        document.getElementById("myHeader").innerHTML = "Have a fucking day!";
+    }
+</script>
+
+
+
 
 </body>
 </html>
