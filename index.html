@@ -7,39 +7,81 @@
     <title>myFirst JavaScript</title>
     <style>
 
-        .wrap{
+        body{
+            width: 850px;
             margin: 0 auto;
         }
 
+        .city{
+
+            background-color: #ff00ff;
+            color: #2c2c2c;
+            border: 2px solid none;
+            margin: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .note{
+            /* 텍스트 글꼴 */
+            text-shadow: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
+            font-size: 120%;
+            color: balck;
+            
+        }
+
+        
     </style>
+
+    <link rel="stylesheet" href="./">
+
 </head>
 <body>
 
 
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.
+            <span class="note">important</span>
+        </p>
+    </div>
+
+
+    <p>This is some <span class="note">important</span> text.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+
     <h2>JavaScript Statements</h2>
     <p>JavaScript code blocks are written between {and}</p>
-    <button type="button" onclick="myFunction()">Click Me!</button>
+    <button type="button" onclick="myFunction()">Click Me  fucking boy</button>
 
-    <p id="demo1"></p>
-    <p id="demo2"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+
+
+
 
     <script>
         function myFunction(){
-            alert("sign up")
-            document.getElementById("demo1").innerHTML = "Hello minki";
-            document.getElementById("demo2").innerHTML = "How are you?"
+            document.getElementsByClassName("demo").innerHTML = "Hello minki";
+            document.getElementsByClassName("demo").innerHTML = "How are you?"
         }
 
+        //id로 했었는데;
         //주석을 사용하여 실행 방지
-
         document.getElementById("myP").innerHTML = "My first paragraph.";
-
 
         var $ = 2;
         var $myMoney = 5;
-        document.getElementById("demo").innerHTML = $ + $myMoney;
+        document.getElementsByClassName("demo").innerHTML = $ + $myMoney;
+
 
     </script>
+
+
+
 
     <h2>JavaScript $</h2>
     <p>The dollar sign is treated as a letter in JaavaScript name.</p>
@@ -67,6 +109,32 @@
     </div>
 </div>
 
+    <p>My mother has <div style="color: blue; font-weight:bold">blue</div> eyes and my father has</p>
+
+
+
+
+    <!-- 자바 스크립트 -->
+    <h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+    function myFunction(){
+        var x = document.getElementsByClassName("city");   
+        for(var i = 0; i < x.length; i++){
+            x[i].style.display = "none";}}
+</script>
 
 </body>
 </html>
