@@ -28,7 +28,6 @@ console.log("문자열")
 \\ -> 역슬래시
 
 #문자열 합체
-+
 
 #불
 true false
