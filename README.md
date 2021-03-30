@@ -1,56 +1,56 @@
 # 김민기
-## [03월 16일]
-> 오늘 배운 요약
-> 최근 날짜가 제일 뒤에 와야 한다.
 
-> 여러 줄 요약
-
-> 카톡 단톡방에 공지가 있다. [요망]
->
+#주석
+한 줄 주석 처리 //
+여러 줄 주석 처리 /* */
 
 
-## 
+#출력 메소드
+console.log("문자열")
 
- <h1>My First JavaScript</h1>
-    <p>JavaScript cann change the content of ana HTML element : </p>
+#기본 자료형
++ - * /
 
-    <button type="button" onclick="myFunction()">Click Me!</button>
+#연산자 우선순위
 
-    <p id="demo">This is a demonstration.</p>
+#문자열
+" " , ' ' 
 
-
-    <h1>My First JavaScript</h1>    
-    <p id="demo2">JavaScript can change the style of an HTML element.</p>
-
-    <script>
-        function myFunction2(){
-            document.getElementById("demo2").style.fontSize = "25px";
-
-            document.getElementById("demo2").style.color = "red";
-
-            document.getElementById("demo2").style.backgroundColor = "yellow";
-        }
-    </script>
-    <button type="button" onclick="myFunction2()">Click me!</button>
+#이스케이프 문자
+\ (백슬레쉬를 사용한다.)
 
 
-    <script>
-        function myFunction(){
-            document.getElementById("demo").innerHTML = "Hello JavaScript!";
-        }
-    </script>
+#기본자료형
+\t -> 수평 탭
+\n -> 줄바꿈
+\' -> 작은 따옴표
+\" -> 큰 따옴표
+\\ -> 역슬래시
 
-    <h1>My First JavaScript</h1>
-    <p>Here, a JavaScript changes  the value of the src (source) attribute of an image.</p>
+#문자열 합체
++
 
-    <script>
-        function light(sw){
-            var pic;
-            if(sw == 0){
-                pic = "off.jpg"
-            }else{
-                pic = "on.jpg"
-            }
-            document.getElementById('myImage').src = pic;
-        }
-    </script>
+#불
+true false
+
+#논리 연산자
+! 논리 부정
+|| 논리합 연산자
+&& 논리곱 연산자
+
+# 변수 
+ let 식별자;
+  let pi; -> 변수 pi를 선언
+      pi = 3.14; -> 변수 pi에 값을 항당
+      
+#복합 대입 연산자
++= -> 숫자 덧셈 후 대입 연산자
+-= -> 숫자 뺄셈 후 대입 연산자
+*= -> 숫자 곱셈후 대입 연산자
+/= -> 숫자 나눗셈 후 대입 연산자
+
+#문자열 대입 연산자
++= 
+
+
+
