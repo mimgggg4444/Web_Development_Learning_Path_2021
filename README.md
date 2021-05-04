@@ -3,24 +3,24 @@
 # 프로토타입
 *생성자 함수로 만든 객체는 프로토타입 공간에 메소드를 지정해서 모든 객체가 공유하도록 함, 해당 함수를 생성자 함수로 사용했을 때만 의미가 있음.
 
-// 생성자 함수
-function Product(name, price){
+    // 생성자 함수
+    function Product(name, price){
     this.name = name;
     this.price = price;
-}
+    }
 
-// 프로토타입에 메소드를 선언합니다.
-Product.prototype.print = function(){
+    // 프로토타입에 메소드를 선언합니다.
+    Product.prototype.print = function(){
     console.log(`${this.name}의 가격은 ${this.price}원 입니다.`);
-};
+    };
 
-// 상품 목록을 선언합니다.
-let products = [
+    // 상품 목록을 선언합니다.
+    let products = [
     new Product('바나나', 1200),
     new Product('사과', 2000),
     new Product('배', 3000),
     new Product('고구마', 700),
-]
+    ]
 
 
 
