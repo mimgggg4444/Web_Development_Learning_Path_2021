@@ -27,10 +27,15 @@
     ]
 
 ### 2 기본 자료형과 객체 자료형의 차이
-기본 자료형 숫자, 문자, bool
-  let foo = 123;
-  let foo = "abc";
-  let foo = false;
+차이점: 기본 자료형은 객체가 아니므로 속성과 메소드를 추가할 수 없다.
+  let primiriveNumber = 273
+  primitiveNumber.method = function(){
+      return 'Primitive Method'
+  }
+  console.log(primiriveNumber());
+  
+Primitive Method
+
 
 
 
