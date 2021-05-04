@@ -34,7 +34,13 @@
         return 'Primitive Method'
     }
     console.log(primiriveNumber());
+  
+생성자 함수 설정
+  
+### 3 String 객체
 
+
+속성과 메소드
 
 
 
