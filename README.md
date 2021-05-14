@@ -8,22 +8,34 @@
 예외 처리 : 오류에 대처할 수 있게 하는 것
   
   
-   function callThreeTimes(callback) {
+    function callThreeTimes(callback) {
     for (let i = 0; i < 3; i++) {
         callback();
     }
-}
+    }
 
 callThreeTimes(function () { console.log("안녕하세요") })
 
 callThreeTimes();
 ### 1.2 고급 예외 처리
-  
+  예외 상황 확인 : 배열을 생성할 때 길이를 음수르ㅗ 지정하면 RangeError가 발생
+  고급 예외 처리 : try catch finally 구문
 
 ### 1.3 예외 객체
-  
+예외가 발생하면 어떤 예외가 발생했는지 정보를 전달함
+   
+catch 구문의 괄호 안의 변수
+   name 속성과 message 속성이 있다.
+   
+   ReferenceError 후에 예외 객체의 name 속성과 message 속성을 출력
+
 ### 1.4 예외 강제 발생
-  
+throw 키워드 사용
+   throw 키워드 뒤에는 문자열 또는 Error 객체를 입력
+   자세한 예외 출력은 Error 객체를 사용
+   문자열을 사용할 때는 catch 구문의 예외 객체에 간단한 문자열만 전달됨
+   Error 객체를 사용한 예외 강제 발생 때의 에외 객체
+   
 
 
 
